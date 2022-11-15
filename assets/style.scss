@@ -1,0 +1,1098 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+
+$Cormorant: 'Cormorant Garamond', serif;
+$Montserrat: 'Montserrat', sans-serif;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+}
+
+//header
+//background_header
+//=========================================
+.background_header {
+    background-image: url(../assets/imges/Background_header.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 1061px;
+}
+//header
+//nav
+
+.position_nav {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.navbar__wrap {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    z-index: 1000;
+}
+
+.menu_header {
+    list-style: none;
+    display: flex;
+}
+
+.logo_header {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    z-index: 1000;
+    background-image: url(../assets/imges/Logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 209px;
+    height: 78.9px;
+}
+
+.nav {
+    font-family: $Montserrat;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: color .1s linear;
+    &:first-child {
+        margin-left: 0;
+    }
+    &:hover {
+        color: #ffc200;
+    }
+}
+
+.menu_header > li {
+    margin-left: 70px;
+}
+
+.header_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+
+.black_cap {
+    height: 120px;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    transition: all .4s linear;
+    animation-name: start_cap;
+    animation-duration: .1s;
+}
+
+@keyframes start_cap {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.hamb {
+    display: none;
+}
+
+.popup {
+    display: none;
+}
+
+.bar {
+    display: none;
+    background-color: #fff;
+}
+//title
+//========================================
+
+.title_pos {
+    padding-top: 260px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.title_text {
+    margin-bottom: 70px;
+    font-size: 120px;
+    font-family: $Cormorant;
+    letter-spacing: 3px;
+    color: #ffc200;
+}
+
+.text_header {
+    color: #e0e0e0;
+    font-family: $Montserrat;
+    font-size: 22px;
+    margin-bottom: 100px;
+    line-height: 1.5;
+}
+
+.button_header {
+    font-family: $Montserrat;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    padding: 15px 50px;
+    background-color: #ffc200;
+    border-radius: 5px;
+}
+
+.text_right_pos_header {
+    margin-right: 150px;
+    margin-left: 300px;
+}
+
+//Best Seller
+//=========================================
+
+.container_Best_Seller {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 130px;
+}
+
+.title_best_pos {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title_main {
+    font-family: $Cormorant;
+    font-size: 65px;
+    letter-spacing: 2px;
+}
+
+.text_best_main {
+    text-align: center;
+    line-height: 1.4;
+    font-family: $Montserrat;
+    font-size: 25px;
+    opacity: 75%;
+}
+
+.container_bloks_food{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 230px;
+}
+
+.block_food {
+    text-align: center;
+    flex-direction:column;
+}
+
+.name_food {
+    margin-top: 25px;
+    font-family: $Cormorant;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+.text_food {
+    margin-top: 20px;
+    font-family: $Montserrat;
+    opacity: .75;
+    font-size: 20px;
+}
+// block 2
+//=========================================
+
+.background_block_2 {
+    background-image: url(../assets/imges/Background_block\ 2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 3114px;
+}
+
+.container_block_2_food {
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.block_2_food {
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title_text_main {
+    text-align: left;
+    font-size: 80px;
+    color: #ffc200;
+    font-family: $Cormorant;
+    letter-spacing: 5px;
+    padding-top: 80px;
+    margin-bottom: 70px;
+}
+
+.text_original_main {
+    text-align: left;
+    color: #fff;
+    line-height: 1.5;
+    opacity: .75;
+    font-family: $Montserrat;
+    font-size: 25px;
+    margin-bottom: 90px;
+}
+//stat
+
+.title_main_stat {
+    text-align: center;
+    font-size: 100px;
+    color: #ffc200;
+    font-family: $Cormorant;
+    letter-spacing: 3px;
+    margin-top: 300px;
+    margin-bottom: 50px;
+}
+
+.text_main_stat {
+    text-align: center;
+    color: #fff;
+    opacity: .75;
+    font-family: $Montserrat;
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 100px;
+}
+
+.block_img_stat {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.stat_photo {
+    margin-top: 20px;
+}
+//block 3
+
+.block_main_chicken {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 430px;
+}
+
+.block_chicken_text {
+    margin-left: 100px;
+}
+
+.text_chicken_main {
+    text-align: left;
+    color: #fff;
+    line-height: 1.5;
+    opacity: .75;
+    font-family: $Montserrat;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.chicken_ul {
+    margin-top: 10px;
+    list-style: circle;
+    margin-left: 20px;
+    text-align: left;
+    color: #fff;
+    line-height: 1.5;
+    opacity: .75;
+    font-family: $Montserrat;
+    font-size: 25px;
+    font-weight: lighter;
+    margin-bottom: 50px;
+}
+
+.title_chicken_main {
+    text-align: left;
+    font-size: 90px;
+    color: #ffc200;
+    font-family: $Cormorant;
+    letter-spacing: 5px;
+    padding-top: 80px;
+    margin-bottom: 40px;
+}
+
+//background block 3
+//=========================================
+.container_block_3_back {
+    background-image: url(../assets/imges/Background_block_3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 1061px;
+    margin-top: 150px;
+}
+
+.about_compony {
+    text-align: center;
+    font-size: 120px;
+    font-family: $Cormorant;
+    letter-spacing: 3px;
+    padding-top: 250px;
+}
+
+.text_about_company {
+    text-align: center;
+    margin-top: 70px;
+    color: #000;
+    opacity: 0.85;
+    font-size: 35px;
+    font-family: $Montserrat;
+    line-height: 1.5;
+}
+
+//block 4
+//=========================================
+
+.container_last_block_4 {
+    background-image: url(../assets/imges/Design\ last\ creative\ block.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 1061px;
+}
+
+.title_sub {
+    text-align: center;
+    font-size: 100px;
+    font-family: $Cormorant;
+    letter-spacing: 3px;
+    padding-top: 250px;
+}
+
+.text_sub {
+    margin-top: 30px;
+    text-align: center;
+    opacity: .75;
+    font-size: 35px;
+    font-family: $Montserrat;
+    line-height: 1.5;
+}
+
+.block_sub {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.input_block {
+    width: 600px;
+    height: 65px;
+    border: none;
+    color: #000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);;
+    outline: 0;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.btn_sub {
+    text-decoration: none;
+    padding: 20px 40px;
+    background-color: #ffc200;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);;
+    color: #000;
+    font-size: 20px;
+    font-family: $Montserrat;
+    letter-spacing: 0.5px;
+}
+
+//footer
+//=========================================
+
+.background_footer {
+    background-color: #303030;
+    width: 100%;
+    height: 1061px;
+}
+
+.container_footer {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-top: 350px;
+}
+
+.block_footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title_footer {
+    color: #fff;
+    font-family: $Cormorant;
+    letter-spacing: 3px;
+    font-size: 65px;
+}
+
+.text_footer {
+    color: #fff;
+    font-family: $Montserrat;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    margin-top: 20px;
+}
+
+.media_text {
+    margin-top: 70px;
+    font-family: $Montserrat;
+    color: #fff;
+    font-size: 35px;
+}
+
+.media_img {
+    margin-top: 30px;
+}
+
+.left_media {
+    margin-left: 30px;
+}
+
+.block_other_footer {
+    padding-top: 20px;
+    margin-right: 100px;
+}
+
+.dope_info {
+    color: #fff;
+    font-family: $Montserrat;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.display_footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.info_footer {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: $Montserrat;
+    margin-top: 30px;
+    transition: color .1s linear;
+    &:hover {
+        color: #ffc200;
+    }
+}
+
+//site 2
+//eror 404
+//=======================================
+
+.cap_site2 {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0,0,0,.85);
+}
+
+.container_site2 {
+    padding-top: 8px;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+
+.block_site2 {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    z-index: 10;
+}
+
+.title_site2 {
+    font-family: $Montserrat;
+    font-size: 35px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: color .1s linear;
+    &:hover {
+        color: #ffc200;
+    }
+}
+
+//background_site2
+
+.background_site2 {
+    background-image: url(../assets/imges/Site.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+//media 
+@media screen and (max-width: 1650px) {
+    .text_right_pos_header {
+        margin-right: 65px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .text_right_pos_header {
+        margin-right: 60px;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .text_right_pos_header {
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .text_right_pos_header {
+        margin-right: 0px;
+    }
+    .block_chicken_text {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .title_text_main {
+        font-size: 65px;
+        margin-bottom: 40px;
+    }
+    .text_original_main {
+        font-size: 23px;
+        margin-bottom: 60px;
+    }
+    .text_right_pos_header {
+        padding-left: 200px;
+    }
+}
+
+@media screen and (max-width: 1315px) {
+    
+
+    .navbar__wrap .menu_header {
+        display: none;
+    }
+
+    .hamb {
+        display: flex;
+        align-items: center;
+    }
+
+    .humb__field {
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    .bar {
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin: 6px auto;
+        transition: 0.2s;
+    }
+
+    .popup {
+        position: fixed;
+        top: 0px;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.75);
+        z-index: 100;
+        display: flex;
+        transition: 0.3s;
+    }
+    .popup.open {
+        right: 0;
+    }
+
+    .popup .menu_header{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding: 130px 0;
+    }
+    .popup .menu_header > li {
+        width: 100%;
+    }
+    .popup .menu_header > li > a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .popup .menu_header > li {
+        margin-left: 0;
+    }
+
+    .title_text_main {
+        font-size: 70px;
+        padding-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .food_main_fish {
+        width: 601px;
+        height: 600px;
+    }
+    .text_original_main {
+        font-size: 22px;
+        margin-bottom: 50px;
+    }
+    .block_2_food {
+        padding-top: 200px;
+    }
+    .text_right_pos_header {
+        padding-left: 200px;
+    }
+    .title_pos {
+        padding-top: 200px;
+    }
+    .block_main_chicken {
+        margin-top: 200px;
+    }
+    .chicken_photo {
+        width: 601px;
+        height: 600px;
+    }
+    .title_chicken_main {
+        padding-top: 40px;
+        font-size: 70px;
+    }
+    .block_chicken_text {
+        margin-left: 50px;
+    }
+    .stat_photo {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .background_site2 {
+    background-image: url(../assets/imges/Site.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 120px;
+    }
+    .container_bloks_food {
+        flex-direction: column;
+    }
+
+    .container_bloks_food > .block_food {
+        margin-top: 100px;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    .title_text_main {
+        font-size: 60px;
+        padding-top: 70px;
+    }
+    .food_main_fish {
+        width: 551px;
+        height: 550px;
+    }
+    .text_original_main {
+        font-size: 20px;
+    }
+    .text_right_pos_header {
+        padding-left: 150px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .background_site2 {
+    background-image: url(../assets/imges/Site.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 170px;
+    }
+    .block_site2 {
+        left: 42%;
+    }
+    .title_text_main {
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .text_original_main {
+        text-align: center;
+    }
+
+    .photo_fish {
+        text-align: center;
+    }
+
+    .block_2_food {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;
+        text-align: center;
+    }
+    .title_text {
+        font-size: 100px;
+        margin-bottom: 40px;
+    }
+    .text_header {
+        font-size: 20px;
+        margin-bottom: 70px;
+    }
+    .text_right_pos_header {
+        padding-left: 100px;
+    }
+    .title_main_stat {
+        margin-top: 150px;
+    }
+
+    .text_main_stat {
+        margin-bottom: 70px;
+    }
+
+    .block_main_chicken {
+        flex-direction: column;
+        margin-top: 70px;
+        text-align: center;
+    }
+    .chicken_photo {
+        width: 551px;
+        height: 550px;
+        margin-top: 40px;
+    }
+    .title_chicken_main, .photo_chicken, .text_chicken_main, .chicken_ul {
+        text-align: center;
+        list-style: none;
+    }
+    .block_chicken_text {
+        margin-left: 0;
+    }
+
+    .container_footer {
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    .block_footer {
+        flex-direction: column;
+    }
+    .block_other_footer {
+        margin-right: 0;
+        padding-top: 80px;
+    }
+    .display_footer {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .text_right_pos_header {
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .background_site2 {
+    background-image: url(../assets/imges/Site.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 685px;
+    height: 350px;
+    margin: 0 auto;
+    margin-top: 180px;
+    }
+    .logo_site404 {
+        margin-top: 5px;
+        width: 200px;
+        height: 77px;
+    }
+    .text_right_pos_header {
+        margin-left: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .background_site2 {
+    background-image: url(../assets/imges/Site.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 585px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 200px;
+    }
+    .block_site2 {
+        left: 38%;
+    }
+    .text_right_pos_header {
+        margin-left: 200px;
+    }
+    .text_right_pos_header {
+        margin-left: 230px;
+    }
+    .stat_photo{
+        width: 275px;
+        height: 275px;
+    }
+    .title_footer {
+        font-size: 55px;
+    }
+    .text_footer {
+        font-size: 20px;
+    }
+    .media_text {
+        font-size: 30px;
+    }
+    .block_other_footer {
+        padding-top: 60px;
+    }
+    .container_footer {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .background_site2 {
+    background-image: url(../assets/imges/Site.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 200px;
+    }
+    .logo_site404 {
+        margin-top: 15px;
+        width: 150px;
+        height: 58px;
+    }
+    .text_right_pos_header {
+        margin-left: 100px;
+    }
+    .food_main_fish {
+        width: 401px;
+        height: 400px;
+    }
+    .chicken_photo {
+        width: 401px;
+        height: 400px;
+    }
+
+    .stat_photo{
+        width: 245px;
+        height: 245px;
+    }
+    .about_compony {
+        font-size: 100px;
+    }
+    .text_about_company {
+        font-size: 30px;
+    }
+    .title_sub {
+        font-size: 70px;
+    }
+    .text_sub {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .background_site2 {
+    background-image: url(../assets/imges/Site.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 200px;
+    }
+    .block_site2 {
+        top: 30px;
+    }
+    .title_site2 {
+        font-size: 30px;
+    }
+    .text_right_pos_header {
+        margin-left: 20px;
+    }
+    .title_text {
+        font-size: 60px;
+        margin-bottom: 30px;
+    }
+    .text_header {
+        font-size: 20px;
+        margin-bottom: 70px;
+        opacity: 1;
+    }
+    .title_main_stat {
+        font-size: 80px;
+    }
+    .stat_photo{
+        width: 195px;
+        height: 195px;
+    }
+    .about_compony {
+        font-size: 85px;
+    }
+    .text_about_company {
+        font-size: 25px;
+    }
+    .input_block {
+        width: 300px;
+    }
+    .btn_width {
+        padding: 10px 8px;
+        line-height: 45px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .background_site2 {
+    background-image: url(../assets/imges/Site.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 180px;
+    }
+    .logo_site404 {
+        margin-top: 25px;
+        width: 100px;
+        height: 40px;
+    }
+    .text_right_pos_header {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .title_main {
+        font-size: 60px;
+    }
+
+    .title_text {
+        font-size: 60px;
+        text-align: center;
+    }
+    .text_header {
+        font-size: 19px;
+        margin-bottom: 60px;
+        opacity: 1;
+        text-align: center;
+    }
+    .food_main_fish {
+        width: 341px;
+        height: 320px;
+    }
+    .chicken_photo {
+        width: 341px;
+        height: 320px;
+        margin-top: 100px;
+    }
+    .block_2_food {
+        padding-top: 30px;
+    }
+    .title_text_main {
+        font-size: 45px;
+        margin-bottom: 40px;
+    }
+    .text_original_main {
+        font-size: 18px;
+        margin-bottom: 70px;
+    }
+    .title_main_stat {
+        font-size: 60px;
+        margin-bottom: 10px;
+        margin-top: 200px;
+    }
+    .text_main_stat {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    .stat_photo{
+        width: 171px;
+        height: 171px;
+    }
+    .block_main_chicken {
+        margin-top: 150px;
+    }
+    .text_chicken_main {
+        margin-bottom: 30px;
+    }
+    .chicken_ul {
+        margin-bottom: 60px;
+    }
+    .about_compony {
+        font-size: 70px;
+    }
+    .text_about_company {
+        font-size: 25px;
+    }
+    .input_block {
+        width: 220px;
+    }
+    .btn_width {
+        padding: 10px 2px;
+        line-height: 45px;
+        font-size: 15px;
+    }
+    .logo_header {
+        width: 200px;
+        height: 75.4px;
+        top: 25px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .block_main_chicken {
+        margin-top: 40px;
+    }
+}
